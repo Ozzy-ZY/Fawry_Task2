@@ -5,7 +5,7 @@ import services.BuyStrategy.contracts.BuyStrategy;
 
 import java.util.HashMap;
 
-public class BuyServiceFactory {
+public class BuyStrategyFactory {
     private static HashMap<BookType, BuyStrategy> strategies = new HashMap<>();
     static{
         strategies.put(BookType.PaperBook, new PaperBookBuyStrategy());
