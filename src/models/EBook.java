@@ -15,4 +15,8 @@ public class EBook extends Book {
         this.fileType = fileType;
     }
 
+    @Override
+    public BookType getBookType() {
+        return BookType.EBook;
+    }
 }

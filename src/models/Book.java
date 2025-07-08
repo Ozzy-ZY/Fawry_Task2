@@ -13,6 +13,7 @@ public abstract class Book {
         this.year = Year;
         this.price = price;
     }
+    public abstract BookType getBookType();
     public boolean isOutdated(int yearCount){
         return LocalDate.now().getYear() - year > yearCount;
     }

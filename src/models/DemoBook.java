@@ -5,4 +5,9 @@ public class DemoBook extends Book {
         super(ISBN, title, Year, price);
     }
 
+    @Override
+    public BookType getBookType() {
+        return BookType.DemoBook;
+    }
+
 }

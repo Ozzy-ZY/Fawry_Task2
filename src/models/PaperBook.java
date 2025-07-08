@@ -16,4 +16,9 @@ public class PaperBook extends Book {
     public void removeFromStock(int quantity){
         stock -= quantity;
     }
+
+    @Override
+    public BookType getBookType() {
+        return BookType.PaperBook;
+    }
 }
