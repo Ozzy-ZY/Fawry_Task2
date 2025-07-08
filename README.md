@@ -12,5 +12,12 @@ service layer
 that require different logic
 * I used the Simple Factory Pattern to create the needed strategy for each book type
 and cached them in a hashmap
+## ScreenShots:
+### main function:
+![FirstScreen](/assets/mainfunc.png)
+### 1
+![FirstScreen](/assets/screen1.png)
+### 2
+![FirstScreen](/assets/screen2.png)
 ### enough with me talking : |
 And Again I want to Thank **Fawry** for this challenge I enjoyed it very Much :)
