@@ -14,6 +14,9 @@ public abstract class Book {
         this.price = price;
     }
     public abstract BookType getBookType();
+    public abstract boolean Buyable();
+    public abstract int getStock();
+    public abstract void ReduceQuantity(int quantity);
     public boolean isOutdated(int yearCount){
         return LocalDate.now().getYear() - year > yearCount;
     }
@@ -39,5 +42,15 @@ public abstract class Book {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "ISBN='" + ISBN + '\'' +
+                ", title='" + title + '\'' +
+                ", year=" + year +
+                ", price=" + price +
+                '}';
     }
 }

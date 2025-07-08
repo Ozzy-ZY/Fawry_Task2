@@ -10,4 +10,23 @@ public class DemoBook extends Book {
         return BookType.DemoBook;
     }
 
+    @Override
+    public boolean Buyable() {
+        return false;
+    }
+
+    @Override
+    public int getStock() {
+        return 0;
+    }
+
+    @Override
+    public void ReduceQuantity(int quantity) {
+        return;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + " DemoBook";
+    }
 }

@@ -19,4 +19,24 @@ public class EBook extends Book {
     public BookType getBookType() {
         return BookType.EBook;
     }
+
+    @Override
+    public boolean Buyable() {
+        return true;
+    }
+
+    @Override
+    public int getStock() {
+        return -1;
+    }
+
+    @Override
+    public void ReduceQuantity(int quantity) {
+        return;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString()+ " Format: "+ fileType;
+    }
 }
